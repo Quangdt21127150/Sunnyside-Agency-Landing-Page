@@ -1,0 +1,56 @@
+.header {
+  position: relative;
+  height: 550px;
+  background-image: url(../../assets/images/mobile/image-header.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 1.25rem;
+
+  &-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-bottom {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.25rem;
+    text-align: center;
+
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  h1 {
+    color: var(--White);
+    font-family: var(--fraunces-font);
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 4.5rem;
+  }
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .header {
+    background-image: url(../../assets/images/desktop/image-header.jpg);
+
+    &-top {
+      align-items: center;
+    }
+  }
+
+  .btn {
+    display: none;
+  }
+}

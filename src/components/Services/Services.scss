@@ -1,0 +1,50 @@
+.service {
+  font-family: var(--fraunces-font);
+  font-weight: 700;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 2rem;
+  padding: 3rem 1.5rem;
+  text-align: center;
+
+  &:first-child {
+    color: var(--Dark-desaturated-cyan);
+  }
+
+  &:last-child {
+    color: var(--Dark-blue);
+  }
+
+  h2 {
+    font-weight: var(--fraunces-700);
+    font-size: 1.75rem;
+  }
+}
+
+.btn-more.btn {
+  display: block;
+  text-transform: uppercase;
+  font-size: inherit;
+  letter-spacing: 2px;
+  font-weight: var(--fraunces-900);
+  width: 50%;
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .services-container {
+    display: flex;
+  }
+
+  .service {
+    min-width: 49.5vw;
+    align-items: center;
+
+    p {
+      max-width: 50%;
+    }
+  }
+}
