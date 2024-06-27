@@ -17,6 +17,7 @@ export default function Header() {
       setIsMenuOpen(true);
     }
   });
+
   useEffect(() => {
     const handleResize = () => {
       const isDesktop = window.innerWidth >= 768;
